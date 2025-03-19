@@ -238,9 +238,9 @@
 				function = "uart0";
 			};
 
-			uart5_ph_pins: uart5-ph-pins {
-				pins = "PH2", "PH3";
-				function = "uart5";
+			uart2_pi_pins: uart2-pi-pins {
+				pins = "PI5", "PI6";
+				function = "uart2";
 			};
 
 			/omit-if-no-ref/
