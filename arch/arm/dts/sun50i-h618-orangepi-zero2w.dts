@@ -17,10 +17,11 @@
 
 	aliases {
 		serial0 = &uart0;
+		serial5 = &uart5;
 	};
 
 	chosen {
-		stdout-path = "serial0:115200n8";
+		stdout-path = "serial5:115200n8";
 	};
 
 	leds {
@@ -151,6 +152,12 @@
 &uart0 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&uart0_ph_pins>;
+	status = "okay";
+};
+
+&uart5 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&uart5_ph_pins>;
 	status = "okay";
 };
 
